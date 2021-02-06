@@ -1,5 +1,7 @@
+import random
 f = open("quotes.txt")
 quotes = f.readlines()
 f.close()
-
-print(quotes[0])
+last = 13
+rnd = random.randint(0, last)
+print(quotes[rnd])
